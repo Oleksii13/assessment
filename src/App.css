@@ -1,19 +1,65 @@
 .navigation {
-  z-index: 2;
-  margin-left: 3%;
-  padding: 0 !important;
+  /* z-index: 2;
+  /* margin-left: 3%; */
+  /* padding: 0 !important; */
 }
 .navbar-brand {
 }
 
 .sidebar {
   padding-top: 3%;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
+  /* position: fixed; */
+  flex: 1;
   height: 100%;
-  width: 3%; /* Set the width of the sidebar */
-  z-index: 1; /* Stay on top of everything */
-  top: 0rem; /* Stay at the top */
-  background-color: rgba(0, 60, 113, 255); /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  /* padding-top: 10px; */
+  width: 3%;
+  top: 0rem;
+  background-color: rgba(0, 60, 113, 255);
+  overflow-x: hidden;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
 }
+h2 {
+  margin-left: 3%;
+  background-color: lightblue;
+}
+
+.container {
+  margin-top: 10% !important;
+  width: 50%;
+}
+.area {
+  fill: url(#areaGradient);
+}
+
+.data-circle {
+  stroke-width: 4;
+  stroke: white;
+  fill: #0071c5;
+}
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 5;
+}
+.text {
+  fill: black;
+  text-anchor: middle;
+  font-size: 1;
+  font-family: sans-serif;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* #root {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 50px;
+  text-align: center;
+  box-sizing: border-box;
+} */
