@@ -8,7 +8,7 @@ import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMonument } from '@fortawesome/free-solid-svg-icons';
 import Button from 'react-bootstrap/Button';
-// import { Button, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
+import TopBar from './TopBar';
 
 const url =
   'https://raw.githubusercontent.com/Oleksii13/jsonHost/main/data.json';
@@ -25,26 +25,8 @@ const MainScreen = () => {
   return (
     <>
       <Context.Provider value={{ switchAreaGraph }}>
-        <div>PERFOMANCE MANAGEMENT</div>
         <div>
-          Diagnostic Tool{' '}
-          <FontAwesomeIcon
-            icon={faMonument}
-            className='fa-flip-vertical'
-          ></FontAwesomeIcon>
-        </div>
-        <div>
-          QUALITY SCORED TREND
-          <Button variant='primary' disabled>
-            Day
-          </Button>{' '}
-          <Button variant='primary'>Week</Button>{' '}
-          <Button variant='primary' active>
-            Month
-          </Button>{' '}
-          <Button variant='primary'>Quarter</Button>{' '}
-          <Button variant='primary'>Half</Button>{' '}
-          <Button variant='primary'>Year</Button>{' '}
+          <TopBar />
         </div>
         {loading ? (
           <LoopCircleLoading />
@@ -72,9 +54,9 @@ const List = ({ gaugeData }) => {
         const { name } = gauge;
         return (
           <>
-            <button key={uuid()} onClick={() => switchAreaGraph(name)}>
+            <div key={uuid()} onClick={() => switchAreaGraph(name)}>
               <Gauge data={gauge} key={uuid()}></Gauge>
-            </button>
+            </div>
           </>
         );
       })}
