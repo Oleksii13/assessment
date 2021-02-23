@@ -25,10 +25,10 @@ h2 {
   background-color: lightblue;
 }
 
-.container {
+/* .container {
   margin-top: 10% !important;
   width: 50%;
-}
+} */
 .area {
   fill: url(#areaGradient);
 }
@@ -50,6 +50,11 @@ h2 {
   font-family: sans-serif;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.col-gauge {
+  display: inline-block !important;
+  float: left !important;
 }
 
 /* #root {

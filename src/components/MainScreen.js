@@ -5,10 +5,9 @@ import { useFetch } from './useFetch';
 import uuid from 'react-uuid';
 import { LoopCircleLoading } from 'react-loadingg';
 import '../App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMonument } from '@fortawesome/free-solid-svg-icons';
-import Button from 'react-bootstrap/Button';
 import TopBar from './TopBar';
+import { Container, Row, Col } from 'react-bootstrap';
+import FiltersButtons from './FiltersButtons';
 
 const url =
   'https://raw.githubusercontent.com/Oleksii13/jsonHost/main/data.json';
@@ -28,18 +27,27 @@ const MainScreen = () => {
         <div>
           <TopBar />
         </div>
-        {loading ? (
-          <LoopCircleLoading />
-        ) : (
-          <AreChart data={data.areaData[chart]} />
-        )}
-        <div className='container'>
-          {loading ? (
-            <LoopCircleLoading />
-          ) : (
-            <List key={uuid()} gaugeData={data.gaugeData} />
-          )}
-        </div>
+        <Container>
+          <Row>
+            <FiltersButtons></FiltersButtons>
+          </Row>
+          <Row>
+            <Col className='col-gauge'>
+              {loading ? (
+                <LoopCircleLoading />
+              ) : (
+                <List key={uuid()} gaugeData={data.gaugeData} />
+              )}
+            </Col>
+            <Col>
+              {loading ? (
+                <LoopCircleLoading />
+              ) : (
+                <AreChart data={data.areaData[chart]} />
+              )}
+            </Col>
+          </Row>
+        </Container>
         {/* ========================= */}
       </Context.Provider>
     </>
