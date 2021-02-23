@@ -6,7 +6,7 @@ import {
   faChartBar,
   faEnvelopeOpenText,
   faFileExport,
-  faMonument,
+  faThumbtack,
   faShapes,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,10 +19,7 @@ const SideNav = () => {
         variant='dark'
       >
         <Nav.Link href='#'>
-          <FontAwesomeIcon
-            icon={faMonument}
-            className='fa-flip-vertical'
-          ></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faThumbtack}></FontAwesomeIcon>
         </Nav.Link>
         <Nav.Link href='#'>
           <FontAwesomeIcon icon={faChartBar}></FontAwesomeIcon>

@@ -55,7 +55,54 @@ h2 {
 .col-gauge {
   display: inline-block !important;
   float: left !important;
-  width: 33%;
+  margin: 3% 0 1% 0;
+  /* width: 33%; */
+}
+
+.col-gauge:focus {
+  background-color: red;
+}
+
+.quality {
+  margin-right: 4%;
+}
+ul {
+  list-style-type: square;
+}
+
+ul li:first-child::marker {
+  color: blue;
+  font-size: 1.5em;
+}
+
+ul li:last-child::marker {
+  color: grey;
+  font-size: 1.5em;
+}
+.row-one {
+  margin-bottom: 2%;
+}
+
+.legend {
+  width: fit-content;
+  padding: 2% 6% 0 0;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.diagnostic-row {
+  background-color: grey;
+  padding: 5px;
+  vertical-align: middle;
+  /* margin: 0 !important; */
+}
+.pin {
+  float: right;
+  vertical-align: middle;
+}
+.globe {
+  margin-right: 5px;
 }
 
 /* #root {

@@ -10,7 +10,7 @@ const FiltersButtons = () => {
     <>
       <Col sm={5}>
         <div>Filters</div>
-        <div>
+        <div class='legend'>
           <ul>
             <li>
               All CQA Results{' '}
@@ -30,7 +30,7 @@ const FiltersButtons = () => {
         </div>
       </Col>
       <Col sm={7}>
-        <span> QUALITY SCORED TREND</span>
+        <span className='quality'> QUALITY SCORED TREND</span>
         <Button variant='primary' disabled>
           Day
         </Button>{' '}

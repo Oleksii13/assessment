@@ -28,7 +28,7 @@ const MainScreen = () => {
           <TopBar />
         </div>
         <Container>
-          <Row>
+          <Row className='row-one'>
             <FiltersButtons></FiltersButtons>
           </Row>
           <Row>
@@ -63,7 +63,7 @@ const List = ({ gaugeData }) => {
         return (
           <>
             <div
-              className='col-gauge'
+              className='col-gauge col-sm-6 col-md-6 col-lg-4'
               key={uuid()}
               onClick={() => switchAreaGraph(name)}
             >
