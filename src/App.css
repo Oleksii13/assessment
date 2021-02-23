@@ -1,14 +1,6 @@
-.navigation {
-  /* z-index: 2;
-  /* margin-left: 3%; */
-  /* padding: 0 !important; */
-}
-.navbar-brand {
-}
-
 .sidebar {
   padding-top: 3%;
-  /* position: fixed; */
+
   flex: 1;
   height: 100%;
   width: 3%;
@@ -24,11 +16,6 @@ h2 {
   margin-left: 3%;
   background-color: lightblue;
 }
-
-/* .container {
-  margin-top: 10% !important;
-  width: 50%;
-} */
 .area {
   fill: url(#areaGradient);
 }
@@ -57,19 +44,11 @@ h2 {
   float: left !important;
   margin: 3% 0 1% 0;
   padding: 0 !important;
-
-  /* width: 33%; */
 }
 .active-btn {
   background-color: lightblue;
   border-color: #a5d4e6 !important;
 }
-.col-lg-4 {
-}
-
-/* .col-gauge:focus {
-  background-color: red;
-} */
 
 .quality {
   margin-right: 4%;
@@ -79,12 +58,12 @@ ul {
 }
 
 ul li:first-child::marker {
-  color: #0071c;
+  color: #0071c5;
   font-size: 1.5em;
 }
 
 ul li:last-child::marker {
-  color: #edecec;
+  color: #d7d7d7;
   font-size: 1.5em;
 }
 .row-one {
@@ -95,15 +74,14 @@ ul li:last-child::marker {
   width: fit-content;
   padding: 2% 6% 0 3%;
 
-  border: 1px solid grey;
+  border: 1px solid #d7d7d7;
   border-radius: 10px;
 }
 
 .diagnostic-row {
-  background-color: grey;
+  background-color: #d7d7d7;
   padding: 5px;
-  /* vertical-align: middle; */
-  /* margin: 0 !important; */
+  margin-bottom: 2%;
 }
 .pin-col {
   align-self: center;
