@@ -13,7 +13,7 @@ const AreChart = ({ data }) => {
     svg.selectAll('text').remove();
 
     const height = 200;
-    const width = 600;
+    const width = 500;
     const margin = { top: 20, right: 100, bottom: 20, left: 100 };
 
     const x = d3

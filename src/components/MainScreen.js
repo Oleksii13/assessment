@@ -32,14 +32,14 @@ const MainScreen = () => {
             <FiltersButtons></FiltersButtons>
           </Row>
           <Row>
-            <Col className='col-gauge'>
+            <Col sm={5}>
               {loading ? (
                 <LoopCircleLoading />
               ) : (
                 <List key={uuid()} gaugeData={data.gaugeData} />
               )}
             </Col>
-            <Col>
+            <Col sm={7}>
               {loading ? (
                 <LoopCircleLoading />
               ) : (
@@ -62,7 +62,11 @@ const List = ({ gaugeData }) => {
         const { name } = gauge;
         return (
           <>
-            <div key={uuid()} onClick={() => switchAreaGraph(name)}>
+            <div
+              className='col-gauge'
+              key={uuid()}
+              onClick={() => switchAreaGraph(name)}
+            >
               <Gauge data={gauge} key={uuid()}></Gauge>
             </div>
           </>

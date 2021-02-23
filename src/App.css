@@ -55,6 +55,7 @@ h2 {
 .col-gauge {
   display: inline-block !important;
   float: left !important;
+  width: 33%;
 }
 
 /* #root {

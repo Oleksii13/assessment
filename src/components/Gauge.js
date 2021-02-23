@@ -1,6 +1,7 @@
 import React from 'react';
 import { arc } from 'd3';
 import { scaleLinear } from 'd3';
+import '../App.css';
 
 const Gauge = ({ min = 0, max = 100, data }) => {
   const { name, score, vsly, sample } = data;
@@ -29,8 +30,8 @@ const Gauge = ({ min = 0, max = 100, data }) => {
     <>
       <div>
         <svg
-          width='13%'
-          height='13%'
+          width='100%'
+          height='20%'
           viewBox={[-100, -150, 200, 300].join(' ')}
           style={{
             border: '1px solid pink',

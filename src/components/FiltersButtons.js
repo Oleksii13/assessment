@@ -8,7 +8,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const FiltersButtons = () => {
   return (
     <>
-      <Col>
+      <Col sm={5}>
         <div>Filters</div>
         <div>
           <ul>
@@ -29,8 +29,8 @@ const FiltersButtons = () => {
           </ul>
         </div>
       </Col>
-      <Col>
-        QUALITY SCORED TREND
+      <Col sm={7}>
+        <span> QUALITY SCORED TREND</span>
         <Button variant='primary' disabled>
           Day
         </Button>{' '}
