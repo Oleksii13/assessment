@@ -23,10 +23,10 @@ const TopBar = () => {
               ></FontAwesomeIcon>
               Diagnostic Tool{' '}
             </Col>
-            <Col>
+            <Col className='pin-col'>
               <FontAwesomeIcon
                 icon={faThumbtack}
-                className=' pin'
+                className='pin'
               ></FontAwesomeIcon>
             </Col>
           </Row>

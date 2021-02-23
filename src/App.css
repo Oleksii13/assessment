@@ -40,7 +40,7 @@ h2 {
 }
 .line {
   fill: none;
-  stroke: blue;
+  stroke: #0272c5;
   stroke-width: 5;
 }
 .text {
@@ -56,12 +56,20 @@ h2 {
   display: inline-block !important;
   float: left !important;
   margin: 3% 0 1% 0;
+  padding: 0 !important;
+
   /* width: 33%; */
 }
-
-.col-gauge:focus {
-  background-color: red;
+.active-btn {
+  background-color: lightblue;
+  border-color: #a5d4e6 !important;
 }
+.col-lg-4 {
+}
+
+/* .col-gauge:focus {
+  background-color: red;
+} */
 
 .quality {
   margin-right: 4%;
@@ -71,12 +79,12 @@ ul {
 }
 
 ul li:first-child::marker {
-  color: blue;
+  color: #0071c;
   font-size: 1.5em;
 }
 
 ul li:last-child::marker {
-  color: grey;
+  color: #edecec;
   font-size: 1.5em;
 }
 .row-one {
@@ -85,7 +93,7 @@ ul li:last-child::marker {
 
 .legend {
   width: fit-content;
-  padding: 2% 6% 0 0;
+  padding: 2% 6% 0 3%;
 
   border: 1px solid grey;
   border-radius: 10px;
@@ -94,12 +102,14 @@ ul li:last-child::marker {
 .diagnostic-row {
   background-color: grey;
   padding: 5px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   /* margin: 0 !important; */
+}
+.pin-col {
+  align-self: center;
 }
 .pin {
   float: right;
-  vertical-align: middle;
 }
 .globe {
   margin-right: 5px;

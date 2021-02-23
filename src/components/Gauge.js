@@ -34,7 +34,7 @@ const Gauge = ({ min = 0, max = 100, data }) => {
           height='20%'
           viewBox={[-100, -150, 200, 300].join(' ')}
           style={{
-            border: '1px solid pink',
+            border: '1px solid #dbdbe7',
           }}
         >
           <path d={backgroundArc} fill='#dbdbe7' />
